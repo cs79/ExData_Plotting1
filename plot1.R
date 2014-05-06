@@ -23,9 +23,9 @@ epc <- read.table("./data/household_power_consumption.txt", header = TRUE, sep =
 
 epc2 <- epc[epc$Date %in% c("1/2/2007", "2/2/2007"),]
 
-## open graphics device
+## open PNG graphics device with specified dimensions
 
-
+png(file = "plot1.png", width = 480, height = 480, units = "px")
 
 ## plot
 
@@ -33,3 +33,5 @@ hist(as.numeric(as.character(epc2[,3])), col="red", main = "Global Active Power"
      xlab = "Global Active Power (kilowatts)")
 
 ## close device
+
+dev.off()
