@@ -1,4 +1,4 @@
-## Script to download and recreate Plot 2 graphic of Global Active Power over
+## Script to download data and recreate Plot 2 graphic of Global Active Power over
 ## time for the two-day window of 2/1/2007 - 2/2/2007 as a 480x480 px PNG.
 ## Script will output a file called "plot2.png".
 
