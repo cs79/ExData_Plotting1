@@ -52,7 +52,8 @@ plot(epc2$DateTime, epc2$Sub_metering_1, type="n", ylab="Energy sub metering", x
 lines(epc2$DateTime, epc2$Sub_metering_1, type="l", col="black")
 lines(epc2$DateTime, epc2$Sub_metering_2, type="l", col="red")
 lines(epc2$DateTime, epc2$Sub_metering_3, type="l", col="blue")
-legend("topright", lty="solid", col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", bty="n", lty="solid", col=c("black", "red", "blue"), 
+       legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 #upper right plot (voltage):
 plot(epc2$DateTime, epc2$Voltage, type="l", ylab="Voltage", xlab="datetime")
 #lower right plot (global reactive power):
